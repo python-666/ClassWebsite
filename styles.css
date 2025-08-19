@@ -1,0 +1,39 @@
+body{
+    background-color: rgba(123, 157, 161, 0.507);
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    font-size: 220%;
+}
+a:link{
+    color: rgb(255, 251, 20);
+}
+a:visited{
+    color: rgb(255, 0, 212);
+}
+a:hover{
+    color: aliceblue;
+}
+a:active{
+    color: chartreuse;
+}
+h1{
+    color: rgb(55, 0, 253);
+    background-color: bisque;
+}
+nav a.active {
+    color: aqua;
+}
+.home-image {
+    width: 100%;
+    margin:auto
+    display:block 
+}
+.about-image {
+    width: 150%;
+    margin:auto
+    display:block 
+}
+
