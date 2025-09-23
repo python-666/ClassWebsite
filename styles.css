@@ -1,14 +1,32 @@
+:root{
+    --tiffany-blue: hsla(173, 44%, 73%, 1);
+    --verdigris: hsla(176, 33%, 61%, 1);
+    --verdigris-2: hsla(173, 45%, 56%, 1);
+    --light-sea-green: hsla(179, 58%, 41%, 1);
+    --verdigris-3: hsla(178, 48%, 44%, 1);
+    --rich-black: hsla(218, 24%, 9%, 1);
+    --rich-black-2: hsla(218, 28%, 11%, 1);
+    --raisin-black: hsla(217, 30%, 14%, 1);
+    --prussian-blue: hsla(217, 32%, 19%, 1);
+    --prussian-blue-2: hsla(219, 28%, 21%, 1);
+    --prussian-blue-3: hsla(219, 26%, 23%, 1);
+    --charcoal: hsla(219, 25%, 25%, 1);
+    --charcoal-2: hsla(219, 24%, 27%, 1);
+    --charcoal-3: hsla(219, 23%, 27%, 1);
+    --charcoal-4: hsla(219, 17%, 34%, 1);
+}
 body{
     background-color: rgba(123, 157, 161, 0.507);
     color: aliceblue;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0px
 }
 
 a{
     font-size: 220%;
 }
 a:link{
-    color: rgb(255, 251, 20);
+    color: var(--prussian-blue);
 }
 a:visited{
     color: rgb(255, 0, 212);
@@ -20,20 +38,51 @@ a:active{
     color: chartreuse;
 }
 h1{
-    color: rgb(55, 0, 253);
-    background-color: bisque;
+    color: var(--prussian-blue-2);
+    background-color:var(--verdigris);
 }
 nav a.active {
-    color: aqua;
+    color:var(--verdigris-2);
 }
 .home-image {
+    width: 10%;
+    margin:auto
+    display:block 
+}
+.logo-image {
+    width: 50%;
+    margin:auto
+    display:block
+}
+.about-image {
     width: 100%;
     margin:auto
     display:block 
 }
-.about-image {
-    width: 150%;
-    margin:auto
-    display:block 
+/* header for page  */
+.page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--tiffany-blue);
+    flex-wrap: wrap;
+    padding-left:15px;
+    padding-right:15px;
 }
-
+.logo {
+    max-width: 100px;
+    min-width: 60px;
+    padding: 10px;
+}
+.navigation {
+    display:flex;
+    flex-direction:row
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.navigation a {
+    color:var(--rich-black);
+    text-decoration: none;
+    padding: 10px;
+}
