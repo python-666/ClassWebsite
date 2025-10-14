@@ -4,13 +4,16 @@
         <title>Tiptoe Soles </title>
         <link rel="icon" href="images/siteicon.png.png">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="responsive.css">
         <meta name="viewport" content="width=device-width,initial-scale=1">
     </head>
     <body>
         <header class="page-header">
+            <button class="nav-button" id="menu-button">
+                <img src="images/menu.svg">
+            </button>
             <a href="index.html">
               <img class="logo-image"img src="images/TipToe_Soles_Logo.png" alt="tiptoe soles logo">
-            
             </a>
            <!--category menu-->
             <nav class="navigation">
@@ -22,12 +25,17 @@
             <!-- search form -->
             <form id="search" method="get" action="">
                 <input type="search" name="keywords" id="keywords" placeholder="Search for a product"
-                <button type="submit">Search</button>
+                <button type="submit">
+                    <img src="images/search icon.svg">
+                <button>
             </form>
-            <nav class="navigation">
+            <nav class="navigation" id="main">
             <a href="account.html">Account</a>
             <a href="wishlist.html">Wishlist</a>
             <a href="cart.html">Cart</a>
+                <img src="images/shoppingbag.svg" alt = "shopping cart"
+            </a>
+            <nav>
         </header>
         <h1>Home Page</h1>
         <img class="home-image" src="mush.jpg"alt="mush"
