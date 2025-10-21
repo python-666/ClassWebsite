@@ -41,11 +41,13 @@ h1{
     color: var(--prussian-blue-2);
     background-color:var(--verdigris);
 }
-nav a.active {
-    color:var(--verdigris-2);
+
+img{
+    max-width: 100%;
 }
+
 .home-image {
-    width: 10%;
+    width: 500px;
     margin:auto;
     display: block;
 }
@@ -55,7 +57,7 @@ nav a.active {
     display:block;
 }
 .about-image {
-    width: 100%;
+    width: 700%;
     margin:auto;
     display:block;
 }
@@ -67,24 +69,28 @@ nav a.active {
     align-items: center;
     background-color: var(--tiffany-blue);
     flex-wrap: wrap;
-    padding-left:15px;
-    padding-right:15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .logo {
     max-width: 100px;
-    min-width: 60px;
+    min-width: 30px;
     padding: 10px;
 }
 .navigation {
     display:flex;
-    flex-direction:row;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
 }
 .navigation a {
-    color:var(--rich-black);
+    color: var(--rich-black);
     text-decoration: none;
     padding: 10px;
+}
+
+.navigation a:hover {
+    color:var(--rich-black);
 }
 
 .nav-button {
@@ -111,9 +117,18 @@ nav a.active {
     border-radius: 5px 0px  0px 5px;
     flex: 1;
 }
-#search button{
+#search button {
     padding: 10px;
     border:solid 1px;
-    max-height: 0px;
-    overflow: hidden;
+    background-color: var(--charcoal-4);
+    border-radius: 0px 5px 5px 0px;
+}
+
+.sr-only {
+    position:absolute;
+    left:-10000px;
+    top: auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
 }

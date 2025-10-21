@@ -1,43 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Tiptoe Soles </title>
-        <link rel="icon" href="images/siteicon.png.png">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="responsive.css">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-    </head>
-    <body>
-        <header class="page-header">
-            <button class="nav-button" id="menu-button">
-                <img src="images/menu.svg">
-            </button>
-            <a href="index.html">
-              <img class="logo-image"img src="images/TipToe_Soles_Logo.png" alt="tiptoe soles logo">
-            </a>
-           <!--category menu-->
-            <nav class="navigation">
+
+<head>
+    <title>Tiptoe Soles </title>
+    <link rel="icon" href="images/siteicon.png.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />"
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header class="page-header">
+        <button class="nav-button" id="menu-button">
+            <img src="images/menu.svg">
+        </button>
+        <a href="index.html" class="logo-link">
+            <img class="logo-image" src="images/TipToe_Soles_Logo.png" alt="tiptoe soles logo">
+        </a>
+        <!--category menu-->
+        <nav class="navigation" id="main">
             <a href="men.html">Men</a>
             <a href="women.html">Women</a>
             <a href="accessories.html">Accessories</a>
             <a href="services.html">Services</a>
-            </nav>
-            <!-- search form -->
-            <form id="search" method="get" action="">
-                <input type="search" name="keywords" id="keywords" placeholder="Search for a product"
-                <button type="submit">
-                    <img src="images/search icon.svg">
-                <button>
-            </form>
-            <nav class="navigation" id="main">
-            <a href="account.html">Account</a>
-            <a href="wishlist.html">Wishlist</a>
-            <a href="cart.html">Cart</a>
-                <img src="images/shoppingbag.svg" alt = "shopping cart"
+        </nav>
+        <!-- search form -->
+        <form id="search" method="get" action="">
+            <input type="search" name="keywords" id="keywords" placeholder="Search for a product">
+            <button type="submit">
+                <img src="images/search icon.svg">
+            </button>    
+        </form>
+        <nav class="navigation" id="user-nav">
+            <a href="account.html">
+               <i class="fa-solid fa-user"></i>
+               <span class="sr-only">account</span>
             </a>
-            <nav>
-        </header>
-        <h1>Home Page</h1>
-        <img class="home-image" src="mush.jpg"alt="mush"
-    </body>
+            <a href="wishlist.html">
+                <i class="fa-solid fa-heart"></i>
+                <span class="sr-only">wishlist</span>
+            </a>
+            <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="sr-only">cart</span>
+            </a>
+        </nav>
+    </header>
+    <h1>Home Page</h1>
+    <img class="home-image" src="mush.jpg"alt="mush"
+</body>
+
 </html>
