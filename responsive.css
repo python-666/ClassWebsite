@@ -1,3 +1,21 @@
+:root{
+    --tiffany-blue: hsla(173, 44%, 73%, 1);
+    --verdigris: hsla(176, 33%, 61%, 1);
+    --verdigris-2: hsla(173, 45%, 56%, 1);
+    --light-sea-green: hsla(179, 58%, 41%, 1);
+    --verdigris-3: hsla(178, 48%, 44%, 1);
+    --rich-black: hsla(218, 24%, 9%, 1);
+    --rich-black-2: hsla(218, 28%, 11%, 1);
+    --raisin-black: hsla(217, 30%, 14%, 1);
+    --prussian-blue: hsla(217, 32%, 19%, 1);
+    --prussian-blue-2: hsla(219, 28%, 21%, 1);
+    --prussian-blue-3: hsla(219, 26%, 23%, 1);
+    --charcoal: hsla(219, 25%, 25%, 1);
+    --charcoal-2: hsla(219, 24%, 27%, 1);
+    --charcoal-3: hsla(219, 23%, 27%, 1);
+    --charcoal-4: hsla(219, 17%, 34%, 1);
+
+
 @media screen and (max-width: 480px) {
     .logo {
         max-width:40px;
@@ -9,7 +27,7 @@
         justify-content: flex-start;
         padding-left: 5px;
         padding-right: 5px;
-    }
+        position: relative;
     }
     .nav-button {
         display: block;
@@ -26,13 +44,18 @@
         display :none;
     }
     #main {
-        order:3;
+        order: 3;
         flex-direction: column;
         max-height: 0px;
         overflow: hidden;
         width: 100%;
         transition: max-height 0.1;
         flex-wrap: nowrap;
+        position: absolute; 
+        top: 100%;
+        left: 0px;
+        background-color: var(--light-sea-green);
+        z-index: 999;
     }
     #main.open{
         max-height: 50vh;
