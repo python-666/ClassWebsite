@@ -15,11 +15,14 @@
     --charcoal-3: hsla(219, 23%, 27%, 1);
     --charcoal-4: hsla(219, 17%, 34%, 1);
 }
-body{
+body {
     background-color: rgba(123, 157, 161, 0.507);
     color: aliceblue;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0px
+    margin: 0px;
+    min-height: 100vh;
+    display :grid;
+    grid-template-rows: auto auto 1fr auto;
 }
 <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
 a{
@@ -155,8 +158,6 @@ img{
     min-width: 300px;
     border: solid 1px var(--light-sea-green);
     border-radius: 4px;
-    
-
 }   
 .slide:nth-child(1){
     background-image: url("images/slides/shoes.png");
@@ -173,4 +174,36 @@ img{
 .slide:nth-child(4){
     background-image: url("images/slides/shoes.png");
     color:rgb(86, 238, 225);
+}
+nav a{
+    text-decoration:none;
+}
+.main-footer {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+    background-color: var(--light-sea-green);
+    color:var(--charcoal-4);
+    padding: 20px 30px;
+    margin-top: 30px;
+}
+.footer-nav{
+    display:flex;
+    flex-direction: column;
+}
+.footer-nav a, .social-nav a, .legal-nav a {
+    color:rgb(90, 90, 97);
+    padding: 5px;
+}
+.social-nav{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 120% ;
+}
+.legal-nav {
+    min-width: 100%;
+    display:flex;
+    flex-direction: row;
+    gap: 3em;
 }
