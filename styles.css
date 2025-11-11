@@ -14,6 +14,7 @@
     --charcoal-2: hsla(219, 24%, 27%, 1);
     --charcoal-3: hsla(219, 23%, 27%, 1);
     --charcoal-4: hsla(219, 17%, 34%, 1);
+    color-scheme:light ;
 }
 body {
     background-color: rgba(123, 157, 161, 0.507);
@@ -206,6 +207,7 @@ nav a{
     display:flex;
     flex-direction: row;
     gap: 3em;
+    flex-wrap:row;
 }
 
 .card-container {
@@ -249,4 +251,26 @@ nav a{
     background: linear-gradient( 45deg, brown, yellow, green );
     background: radialGradient ( brown, yellow circle at top );
     margin-top: 1em;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+
+}
+.contact-form input 
+.contact-form textarea {
+    margin-bottom: 0.5em;
+
+}
+.row{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.contact-form button{
+    min-width: auto;
+}
+.contact-details a{
+    color:var(--rich-black-2);
+    font-size:medium;
 }
