@@ -3,7 +3,7 @@
     --verdigris: hsla(176, 33%, 61%, 1);
     --verdigris-2: hsla(173, 45%, 56%, 1);
     --light-sea-green: hsla(179, 58%, 41%, 1);
-    --verdigris-3: hsla(178, 48%, 44%, 1);
+    --verdigris-3: rgb(58, 166, 162);
     --rich-black: hsla(218, 24%, 9%, 1);
     --rich-black-2: hsla(218, 28%, 11%, 1);
     --raisin-black: hsla(217, 30%, 14%, 1);
@@ -21,6 +21,7 @@ body {
     color: aliceblue;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
+    padding: 0px;
     min-height: 100vh;
     display :grid;
     grid-template-rows: auto auto 1fr auto;
@@ -33,13 +34,13 @@ a:link {
     color: var(--prussian-blue);
 }
 a:visited {
-    color: rgb(255, 0, 212);
+    color: rgb(225, 222, 225);
 }
 a:hover {
     color: aliceblue;
 }
 a:active {
-    color: chartreuse;
+    color: rgb(155, 159, 204);
 }
 h1 {
     color: var(--prussian-blue-2);
@@ -71,7 +72,7 @@ img {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--tiffany-blue);
+    background-color: #B6E8E4;
     flex-wrap: wrap;
     padding-left: 15px;
     padding-right: 15px;
@@ -135,6 +136,7 @@ img {
     width: 1px;
     height: 1px;
     overflow:hidden;
+    
 }
 /*---------carousel------------------*/
 .slide{
@@ -147,44 +149,50 @@ img {
     background-color: var(--charcoal-2);
     background-size: cover;
     background-position: center;
+
+    margin-bottom: 0.5rem;
 }
+
 .slide h2{
     font-size: 3.5em;
     text-shadow: 0px 0px 0px var(--rich-black);
     /*color: azure;*/ 
 }
 .slide button {
-    padding: 10px;
-    background-color: var(--prussian-blue-2);
-    min-width: 300px;
-    border: solid 1px var(--light-sea-green);
+    font-size: 1.2em;
+    color: azure;
+    padding: 8px;
+    background-color: transparent;
+    min-width: 30px;
+    border: solid 5px white;
     border-radius: 8px;
     
 }   
 .slide:nth-child(1){
     background-image: url("images/slides/Heavenblack-womens.jpg");
-    color:brown;
+    color:white;
+    text-shadow: 2px 2px 2px var(--rich-black);
 }
 .slide:nth-child(2){
     background-image: url("images/slides/Clancyblue-womens.jpg");
-    color:rgb(221, 166, 207);
+    color:white;
 }
 .slide:nth-child(3){
     background-image: url("images/slides/Chestnutmens.jpg");
-    color:rgb(69, 83, 212);
+    color:white;
 }
 .slide:nth-child(4){
     background-image: url("images/slides/Garytan-mens.jpg");
-    color:#56eee1;
+    color:white;
 }
 nav a{
     text-decoration:none;
 }
 .main-footer {
-    display:flex;
+    display: flex;
     flex-flow:row wrap;
     justify-content: space-between;
-    background-color: var(--light-sea-green);
+    background-color: var(--verdigris-3);
     color:var(--charcoal-4);
     padding: 20px 30px;
     margin-top: 30px;
@@ -212,9 +220,15 @@ nav a{
 }
 /* content */
 .card-container {
-    display:flex;
+    display: flex;
     flex-direction: row;
     gap: 1em;
+    max-width: max-content;
+    min-width: 100vw;
+    
+   
+    /* width: 100vw;
+    margin-left: calc(50% - 50vw); */
 }
 .card img {
     max-width: 100%;
@@ -230,27 +244,34 @@ nav a{
     overflow: hidden;
 }
 .card-button {
+    
     min-width: 100%;
     padding: 12px;
     border: 1px solid var(--prussian-blue-2);
     border-radius:5px;
 }
 .main-content {
-    margin-top:3em;
+    margin-top: 3em;
     margin-left: auto;
     margin-right: auto;
     max-width: 80vw;
 }
+
+
 .banner2 {
-    min-height: 25vh;
-    display:flex;
+    display: flex;
+    min-height: 30vh;
+    /* width: 150vw; */
+    
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    
-    background: linear-gradient( 45deg, brown, yellow, green );
-    background: radialGradient ( brown, yellow circle at top );
+    background-image: url("images/banner2.jpg");
+    /* background-position: center; */
     margin-top: 1em;
+    color: white;
+    border-right: 20;
+  
 }
 .contact-form {
     display: flex;
@@ -294,4 +315,10 @@ nav a{
     font-size: 1.1rem;
     line-height: 1.6;
     color: #333;
+}
+.scrollbox {
+    overflow-x: scroll;
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 0;
 }

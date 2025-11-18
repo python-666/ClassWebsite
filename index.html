@@ -54,8 +54,16 @@
         </nav>
     </header>
     <!--banner-->
+    <!-- <div class="main-carousel"
+    data-flickity='{"cellAlign": "left", "contain": true }'> -->
     <div class="main-carousel"
-    data-flickity='{"cellAlign": "left", "contain": true }'>
+    data-flickity='{
+    "cellAlign": "center",
+    "contain": false,
+    "wrapAround": true,
+    "prevNextButtons": true,
+    "pageDots": true
+    }'>
         <div class="slide">
             <h2>Sales</h2>
             <button>Shop sales</button>
@@ -79,7 +87,7 @@
         <div class="scrollbox">
             <div class="card-container">
                 <div class="card">
-                    <img src="images/shoes/Garyblack-mens.jpg">
+                    <img src="images/shoes/Garyblack-mens.jpg" alt="mens shoes">
                     <div class="card-content">
                         <h3>Mens</h3>
                         <button type="button">
@@ -97,7 +105,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="images/shoes/accesories.jpg">
+                    <img src="images/shoes/accesories.jpg"alt="shoes accessories">
                     <div class="card-content">
                         <h3>Accessories</h3>
                         <button type="button">
@@ -112,7 +120,6 @@
             <button type="button">Shop spring Sale</button>
         </div>
     </main>
-    <main class="main-content"></main>
     <footer class="main-footer">
         <nav class="footer-nav"></nav>
             <a href="about.html">About</a> 
