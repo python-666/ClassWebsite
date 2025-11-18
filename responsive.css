@@ -14,10 +14,11 @@
     --charcoal-2: hsla(219, 24%, 27%, 1);
     --charcoal-3: hsla(219, 23%, 27%, 1);
     --charcoal-4: hsla(219, 17%, 34%, 1);
-
+}
 @media screen and (max-width: 480px){
     .logo-image {
-        max-width:40px;
+        max-width: 70px;
+
     }
     .logo-link {
         align-self: flex-start;    
@@ -34,7 +35,12 @@
     #search{
         min-width: 50 px;
         /* max-width: 170px; */
-        flex: 1;
+        flex: 1;  
+    }
+    #search {
+    padding: 0 8px;
+    margin-bottom: 1px;
+    box-sizing: border-box;
     }
     #search input {
         max-width: 100%;
@@ -59,8 +65,8 @@
     #main.open{
         max-height: 50vh;
     }
-    #user-nav a:nth-child(1) {
-        display : none;
+    /* #user-nav a:nth-child(1) {
+        display : none; */
         
     }
     #user-nav {
