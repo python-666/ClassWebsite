@@ -54,8 +54,7 @@
         </nav>
     </header>
     <!--banner-->
-    <div class="main-carousel"
-    data-flickity='{"cellAlign":"left","contain":true,"cellSelector":".slide"}'>
+    <div class="main-carousel" data-flickity='{"cellAlign": "left", "contain": true }'>
         <div class="slide">
             <h2>Sales</h2>
             <button>Shop sales</button>
@@ -74,7 +73,7 @@
         </div>
     </div>
     <main class="main-content">
-        <div class="card-container">
+        <div class="card-container contact">
             <div class="card">
                 <!--map-->
                 <iframe    
@@ -86,22 +85,20 @@
                 <!--form-->
                 <div class="card-content">
                     <form method= "post" action= "https://example.com/form " class="contact-form">
-                        <h2>Contact us </h2>
+                        <h3>Contact us </h3>
                         <label for = "username"> Name </label>
                         <input id="username" type="text " name="username" placeholder="Jane Smith">
                         <label for="email">Email Address</label>
                         <input id="email" type="email" name="email" placeholder="you@example.com"
                         <div class="row">
-                
-                    
-                        <input type="checkbox" id="spam" checked>
-                        <label for="spam">Yes I like spam </label>
+                            <input type="checkbox" id="spam" checked>
+                            <label for="spam">Yes I like spam </label>
                         </div>
                         <label for="message" > Message </label>
-                        <textarea rows="5" cols="30" id="message" placeholder="Hi there">
-                <div class="row">
-                         <button type="reset">Cancel</button>
-                         <button type="submit">Send</button>
+                        <textarea rows="5" cols="30" id="message" placeholder="Hi there"></textarea>
+                        <div class="row">
+                            <button type="reset">Cancel</button>
+                            <button type="submit">Send</button>
                         </div>
                     </form>
                 </div>
@@ -111,27 +108,26 @@
                 <div class="card-content">
                     <h3>Our Location</h3>
                     <address>
-                        213 Pacific Hwy, St Leonards NSW 2065
+                        322 Avondale Road
+                        Enfield NSW 2133
                     </address>
+                    <h3>Customer Service:</h3>
+                    <p class="contact-details">
+                        Telephone: <a href="tel:0292105000">Contact Us: 02 9210 5000</a>
+                        
+                        Email us at: <a href="mailto:TipToeShoes@gmail.com">Email Us At: TipToeShoes@gmail.com</a>
+                    </p>
+
                 </div>
             
             </div>
-        </div>
-        <div class="contact">
-            <div class="map">
-
-            </div>
-            <div class="address">
-
-            </div>
-
         </div>
     </main>
     <footer class="main-footer">
         <nav class="footer-nav"></nav>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
-            <a href="#">policies</a>
+            <a href="#">Policies</a>
         </nav>
         <nav class="social-nav">
             <a href="https://facebook.com">
@@ -150,7 +146,7 @@
         <nav class="legal-nav">
             <a href="#">Copyright</a>
             <a href="#">Terms and Conditions</a>
-            <a href="#"
+            <a href="#">Privacy</a>
         </nav>
     </footer>
 <!-- JS: load Flickity first, then your code -->

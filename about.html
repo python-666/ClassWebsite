@@ -1,20 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Page</title>
+
+   <title>About Page</title>
     <link rel="icon" href="images/siteicon.png.png">
     <link rel="stylesheet" href="styles.css">
-
+    <link rel="stylesheet" href="responsive.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
 </head>
-
 <body>
-    <nav>
-        <a href="index.html"class="active">Home</a>
-        <a href="about.html">About</a>
-    </nav>
-    <h1>About Page</h1>
-    <img class="about-image" src="skull.jpg" alt="skull">
+    <header class="page-header">
+        <button class="nav-button" id="menu-button">
+            <img src="images/menu.svg">
+        </button>
+        <a href="index.html" class="logo-link">
+            <img class="logo-image" src="images/TipToe_Soles_Logo.png" alt="tiptoe soles logo">
+        </a>
+        <!--category menu-->
+        <nav class="navigation" id="main">
+            <a href="men.html">Men</a>
+            <a href="women.html">Women</a>
+            <a href="accessories.html">Accessories</a>
+            <a href="services.html">Services</a>
+        </nav>
+        <!-- search form -->
+        <form id="search" method="get" action="">
+            <input type="search" name="keywords" id="keywords" placeholder="Search for a product">
+            <button type="submit">
+                <img src="images/search icon.svg">
+            </button>    
+        </form>
+        <nav class="navigation" id="user-nav">
+            <a href="account.html">
+               <i class="fa-solid fa-user"></i>
+               <span class="sr-only">Account</span>
+            </a>
+            <a href="wishlist.html">
+                <i class="fa-solid fa-heart"></i>
+                <span class="sr-only">Wishlist</span>
+            </a>
+            <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="sr-only">Cart</span>
+            </a>
+        </nav>
+    </header>
+    <div></div>
+    <!-- About content -->
+    <main class="page-main">
+    <section class="about-box">
+        <h1>About Us</h1>
+
+        <p>
+            TipToe Soles is an Australian owned and operated company dedicated to making quality footwear accessible to everyone. 
+            Our mission is to provide comfortable, supportive shoes that suit everyday lifestyles while remaining affordable for customers across Australia and around the world.
+        </p>
+
+        <p>
+            Our management team holds a clear vision for the brand: to become the go-to choice for affordable, comfort-focused footwear. 
+            We aim to empower customers to walk confidently by offering products that prioritise cushioning, support and long-lasting wear.
+        </p>
+
+        <p>
+            Our first product range focuses on comfort and daily-wear styles, specifically designed for individuals aged 30 and above who value functionality, support and ease of use in their footwear. 
+            Every pair is crafted to meet the needs of busy adults seeking dependable shoes for work, errands or day-to-day living.
+        </p>
+
+        <p>
+            In line with our design philosophy, this website has been built with a clean and minimalistic layout to ensure easy browsing and a distraction-free experience. 
+            Our goal is to help customers find what they need quickly while enjoying a visually simple, modern and friendly interface.
+        </p>
+
+        <p>
+            At TipToe Soles, we believe comfort should never be a luxury — it should be a standard. 
+            Thank you for supporting our journey as we continue to develop accessible and thoughtful footwear solutions for customers everywhere.
+        </p>
+    </section>
+</main>
+    
+    
+
+            
+            
+            
+    
+    <footer class="main-footer">
+        <nav class="footer-nav"></nav>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">Policies</a>
+        </nav>
+        <nav class="social-nav">
+            <a href="https://facebook.com">
+                <i class="fa-brands fa-facebook"></i>
+                <span class="sr-only">Facebook</span>
+            </a>
+            <a href="https://instagram.com">
+                <i class="fa-brands fa-instagram"></i>    
+                <span class="sr-only">Instagram</span>
+            </a>
+            <a href="https://linkedin.com">
+                <i class="fa-brands fa-linkedin"></i>    
+                <span class="sr-only">Linkedin</span>
+            </a>
+        </nav>
+        <nav class="legal-nav">
+            <a href="#">Copyright</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Pivacy</a>
+        </nav>
+    </footer>
+<!-- JS: load Flickity first, then your code -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
