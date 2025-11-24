@@ -17,8 +17,9 @@
     color-scheme:light ;
 }
 body {
+   
     background-color: rgba(123, 157, 161, 0.507);
-    color: aliceblue;
+
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
@@ -29,18 +30,23 @@ body {
 
 a{
     font-size: 150%;
+    
 }
+
 a:link {
-    color: var(--prussian-blue);
+    color: rgb(255, 255, 255);
 }
+
 a:visited {
-    color: rgb(225, 222, 225);
+    color: rgb(0, 0, 0);
 }
+
 a:hover {
-    color: aliceblue;
+    color: rgb(255, 255, 255);
 }
+
 a:active {
-    color: rgb(155, 159, 204);
+    color: var(--charcoal);
 }
 h1 {
     color: var(--prussian-blue-2);
