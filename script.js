@@ -16,4 +16,3 @@ function onPageLoad() {
     })
 }
 window.addEventListener("load", onPageLoad )
-

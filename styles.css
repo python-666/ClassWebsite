@@ -33,21 +33,21 @@ a{
     
 }
 
-a:link {
+/* a:link {
     color: blue;
 }
 
 a:visited {
-    color: rgb(35, 35, 35);
+    color: rgb(251, 249, 249);
 }
 
 a:hover {
-    color: rgb(255, 254, 254);
+    color: rgb(14, 157, 157);
 }
 
 a:active {
     color: var(--charcoal);
-}
+} */
 h1 {
     color: var(--prussian-blue-2);
     background-color:var(--verdigris);
@@ -88,6 +88,8 @@ img {
     padding-left: 15px;
     padding-right: 15px;
 }
+
+
 
 .navigation {
     display: flex;
@@ -200,6 +202,7 @@ img {
 }
 nav a{
     text-decoration:none;
+    
 }
 .main-footer {
     display: flex;
@@ -269,7 +272,7 @@ nav a{
 .main-content {
     margin-top: 2em;
     margin-left: 2px;
-    margin-right: 2pxx;
+    margin-right: 2px;
     min-width: 99%;
     max-width:100%;
     
@@ -287,7 +290,7 @@ nav a{
     /* background-position: center; */
     margin-top: 1em;
     color: white;
-    border-right: 20;
+    border-right: 20px;
   
 }
 .contact-form {
@@ -312,6 +315,7 @@ nav a{
     color:var(--rich-black-2);
     font-size:medium;
 }
+
 .about-box {
     max-width: 900px;
     margin: 40px auto;
@@ -339,3 +343,31 @@ nav a{
     width: 100%;
     padding-bottom: 0;
 }
+.card {
+        min-width:30vw;
+        flex-shrink:0;
+    }
+    
+    .card-container {
+        min-width: 170vw;
+    }   
+    .card-container.contact{
+        min-width:auto;
+        flex-wrap:wrap;
+    }
+    .card-container.contact .card {
+        min-width:  290px;
+    }
+    .scrollbox {
+        overflow-x: scroll;
+    }
+
+a :{ color: blue; } 
+a:visited { color: rgb(35, 35, 35); }
+a:hover { color: rgb(255, 254, 254); } 
+a:active { color: var(--charcoal);
+
+
+
+
+
