@@ -34,15 +34,15 @@ a{
 }
 
 a:link {
-    color: rgb(255, 255, 255);
+    color: blue;
 }
 
 a:visited {
-    color: rgb(0, 0, 0);
+    color: rgb(35, 35, 35);
 }
 
 a:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 254, 254);
 }
 
 a:active {
@@ -203,7 +203,7 @@ nav a{
 }
 .main-footer {
     display: flex;
-    flex-flow:row wrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     background-color: var(--verdigris-3);
     color:var(--charcoal-4);
@@ -211,11 +211,13 @@ nav a{
     margin-top: 30px;
 }
 .footer-nav{
-    display:flex;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;   /* put links in a line */
+    gap: 2em;              /* spacing between items */
+    align-items: center;
 }
-.footer-nav a, .social-nav a, .legal-nav a {
-    color:rgb(90, 90, 97);
+.social-nav a, .legal-nav a {
+    color:rgb(47, 47, 48);
     padding: 5px;
 }
 .social-nav{
@@ -224,6 +226,7 @@ nav a{
     gap: 20px;
     font-size: 120% ;
 }
+
 .legal-nav {
     min-width: 100%;
     display:flex;
