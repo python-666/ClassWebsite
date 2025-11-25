@@ -105,9 +105,9 @@ img {
 }
 
 .navigation a:hover {
-    color: var(--rich-black);
+   color: white ;
+   -webkit-text-stroke: 0.5px #030303;
 }
-
 .nav-button {
     background-color:var(--verdigris);
     width: 40px;
@@ -154,6 +154,8 @@ img {
     
 }
 /*---------carousel------------------*/
+
+
 .slide{
     width: 100vw;
     display: flex;
@@ -170,10 +172,10 @@ img {
 
 .slide h2{
     font-size: 3.5em;
-    text-shadow: 0px 0px 0px var(--rich-black);
+    text-shadow: 4px 4px 4px var(--rich-black);
     /*color: azure;*/ 
 }
-.slide button {
+.slide-button {
     font-size: 1.2em;
     color: azure;
     padding: 8px;
@@ -181,6 +183,8 @@ img {
     min-width: 30px;
     border: solid 5px white;
     border-radius: 8px;
+    text-decoration: none;
+    
     
 }   
 .slide:nth-child(1){
@@ -215,8 +219,8 @@ nav a{
 }
 .footer-nav{
     display: flex;
-    flex-direction: row;   /* put links in a line */
-    gap: 2em;              /* spacing between items */
+    flex-direction: row;   
+    gap: 2em;             
     align-items: center;
 }
 .social-nav a, .legal-nav a {
@@ -315,6 +319,9 @@ nav a{
     color:var(--rich-black-2);
     font-size:medium;
 }
+.contact-details a:hover{
+    color: var(--charcoal-4);
+}
 
 .about-box {
     max-width: 900px;
@@ -362,11 +369,25 @@ nav a{
         overflow-x: scroll;
     }
 
-a :{ color: blue; } 
-a:visited { color: rgb(35, 35, 35); }
-a:hover { color: rgb(255, 254, 254); } 
-a:active { color: var(--charcoal);
 
+.footer-nav a:link {color:pink;}
+.footer-nav a:visited { color: rgb(35, 35, 35); } 
+.footer-nav a:hover { 
+    color: rgb(255, 254, 254); 
+    -webkit-text-stroke: 0.5px #030303;
+} 
+.footer-nav a:active { color: rgb(245, 169, 169);}
+
+
+
+.social-nav a:hover{
+    color:white;
+    -webkit-text-stroke: 1px #030303;
+}
+.legal-nav a:hover{
+    color:white;
+    -webkit-text-stroke: 0.5px #030303;
+}
 
 
 
